@@ -1,0 +1,3 @@
+/home/arthurlibberecht/EigenProjecten/AVLTree/build/CMakeFiles/main.dir
+/home/arthurlibberecht/EigenProjecten/AVLTree/build/CMakeFiles/edit_cache.dir
+/home/arthurlibberecht/EigenProjecten/AVLTree/build/CMakeFiles/rebuild_cache.dir

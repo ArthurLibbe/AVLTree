@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/arthurlibberecht/EigenProjecten/AVLTree/build",
+  "command": "/usr/bin/g++  -I/home/arthurlibberecht/EigenProjecten/AVLTree/include  -O0 -fsanitize=address,undefined -fno-omit-frame-pointer -g -o CMakeFiles/main.dir/src/AVLTree.cpp.o -c /home/arthurlibberecht/EigenProjecten/AVLTree/src/AVLTree.cpp",
+  "file": "/home/arthurlibberecht/EigenProjecten/AVLTree/src/AVLTree.cpp",
+  "output": "CMakeFiles/main.dir/src/AVLTree.cpp.o"
+},
+{
+  "directory": "/home/arthurlibberecht/EigenProjecten/AVLTree/build",
+  "command": "/usr/bin/g++  -I/home/arthurlibberecht/EigenProjecten/AVLTree/include  -O0 -fsanitize=address,undefined -fno-omit-frame-pointer -g -o CMakeFiles/main.dir/src/main.cpp.o -c /home/arthurlibberecht/EigenProjecten/AVLTree/src/main.cpp",
+  "file": "/home/arthurlibberecht/EigenProjecten/AVLTree/src/main.cpp",
+  "output": "CMakeFiles/main.dir/src/main.cpp.o"
+}
+]
