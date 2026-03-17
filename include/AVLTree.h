@@ -10,11 +10,13 @@ class AVLTree{
         AVLTree(){}
 
         void add(int value);
+
         Node * rotate_left(Node *);
         Node * rotate_right(Node *);
-        void restore_BF(Node * node);
+
         void setup_BF_tree(Node * node);
         int getHight(Node * node);
+        
         void drawTree(const Node * node, std::string tabs);
         void destroy(Node * node);
         ~AVLTree(){

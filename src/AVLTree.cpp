@@ -53,20 +53,17 @@ void AVLTree::add(int value){
     while (current)
     {
         if(current->blanceFactor >1){
-            if(current->left->right){
+            if(current->left->blanceFactor <0){
                 rotate_left(current->left);
             }
-            if(current->left->left){
-                current = rotate_right(current);
-            }
+            current = rotate_right(current);
         }
         if(current ->blanceFactor < -1){
-            if(current->right->left){
+            if(current->right->blanceFactor >1){
                 rotate_right(current->right);
             }
-            if(current->right->right){
-                current = rotate_left(current);
-            }
+            current = rotate_left(current);
+            
         }
         current = current->parent;
     }
@@ -161,18 +158,6 @@ int AVLTree::getHight(Node * node){
     return max(leftH, rightH) + 1;
 }
 
-void AVLTree::restore_BF(Node * node){
-    if(!(node->left && node->right))
-        node->blanceFactor = 0;
-    else if(node->left && node->right)
-        node->blanceFactor = node->right->blanceFactor - node->left->blanceFactor;
-    else{
-        if(node->left)
-            node->blanceFactor += node->left->blanceFactor;
-        if(node->right)
-            node->blanceFactor -= node->right->blanceFactor;
-    }
-}
 
 void AVLTree::destroy(Node * node){
     if(!node)
